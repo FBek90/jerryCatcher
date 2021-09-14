@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <title>WhackAMole</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="title"><span>Jerry를 잡아줄 수 있껍니까?</span></div>
+
+        <div class="result-container">
+            <div class="score">접수: <span id="score__text">0</span></div>
+            <div class="time-left">남는 시간: <span id="timer">--</span></div>
+        </div>
+
+        <!-- Game container -->
+        <div class="game-container">
+            <div class="cont">
+                <div class="block" id='1'><img src="jerry.jpg" alt="">
+                </div>
+                <div class="block" id='2'> <img src="jerry.jpg" alt=""></div>
+            </div>
+
+            <div class="cont">
+                <div class="block" id='3'> <img src="jerry.jpg" alt=""></div>
+                <div class="block" id='4'> <img src="jerry.jpg" alt=""></div>
+                <div class="block" id='5'> <img src="jerry.jpg" alt=""></div>
+                <div class="block" id='6'> <img src="jerry.jpg" alt=""></div>
+            </div>
+            <div class="cont">
+
+                <div class="block" id='7'> <img src="jerry.jpg" alt=""></div>
+                <div class="block" id='8'> <img src="jerry.jpg" alt=""></div>
+                <div class="block" id='9'> <img src="jerry.jpg" alt=""></div>
+                <div class="block" id='10'><img src="jerry.jpg" alt=""></div>
+                <div class="block" id='11'><img src="jerry.jpg" alt=""></div>
+                <div class="block" id='12'><img src="jerry.jpg" alt=""></div>
+            </div>
+            <div class="cont">
+
+                <div class="block" id='13'><img src="jerry.jpg" alt=""></div>
+                <div class="block" id='14'><img src="jerry.jpg" alt=""></div>
+                <div class="block" id='15'><img src="jerry.jpg" alt=""></div>
+                <div class="block" id='16'><img src="jerry.jpg" alt=""></div>
+                <div class="block" id='17'> <img src="jerry.jpg" alt=""></div>
+                <div class="block" id='18'> <img src="jerry.jpg" alt=""></div>
+            </div>
+
+            <div class="cont">
+                <div class="block" id='19'> <img src="jerry.jpg" alt=""></div>
+                <div class="block" id='20'> <img src="jerry.jpg" alt=""></div>
+                <div class="block" id='21'> <img src="jerry.jpg" alt=""></div>
+                <div class="block" id='22'> <img src="jerry.jpg" alt=""></div>
+            </div>
+            <div class="cont">
+
+                <div class="block" id='23'> <img src="jerry.jpg" alt=""></div>
+                <div class="block" id='24'> <img src="jerry.jpg" alt=""></div>
+            </div>
+        </div>
+
+
+
+        <div class="controls">
+
+            <div class="speed__div box">
+                <select id="gameSpeed">
+                    <option value="1000">느리게</option>
+                    <option value="750">정상</option>
+                    <option value="500">빠르게</option>
+                </select>
+            </div>
+            <div id="play">
+                <p id="play__text">START</p>
+            </div>
+            <div class="duration">
+                <select id="dur__drop">
+                    <option value="60">60s</option>
+                    <option value="30">30s</option>
+                    <option value="10">10s</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Time's Up. You've Scored: <b><span id='modal--score'></span></b> points</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
